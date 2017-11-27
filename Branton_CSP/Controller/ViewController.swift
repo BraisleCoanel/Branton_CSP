@@ -44,9 +44,9 @@ public class AbstractionViewController: UIPageViewController, UIPageViewControll
     }
     
     public func pageViewController(_ pageViewController: UIPageViewController, viewControllerBefore
-        viewContoller: UIViewController) -> UIViewController?
+        viewController: UIViewController) -> UIViewController?
     {
-        guard let vControllerIndex = orderedAbstractionViews.index(of: viewController)
+        guard let viewControllerIndex = orderedAbstractionViews.index(of: viewController)
         else
         {
             return nil
@@ -66,7 +66,7 @@ public class AbstractionViewController: UIPageViewController, UIPageViewControll
             return nil
         }
         
-        return orderedAbstraactionViews[previousIndex]
+        return orderedAbstractionViews[previousIndex]
     }
     
     public func pageViewController(_ pageViewController: UIPageViewController, viewControllerAfter viewController: UIViewController) -> UIViewController?
@@ -94,12 +94,17 @@ public class AbstractionViewController: UIPageViewController, UIPageViewControll
         return orderedAbstractionViews[nextIndex]
     }
     
-    override func didReceiveMemoryWarning()
+    
+    public func presentationCount(for pageViewController: UIPageViewController) -> Int
     {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
+        guard let firstViewController = viewControllers?.first, let firstViewControllerIndex =
+            orderedAbstractionViews.index(of: firstViewController)
+        else
+        {
+            return 0
+        }
+        
+        return firstViewControllerIndex
     }
-
-
 }
 
