@@ -32,7 +32,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <wkWebView contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="kWe-M2-WNg">
-                                <rect key="frame" x="45" y="346" width="285" height="280"/>
+                                <rect key="frame" x="55" y="302" width="285" height="280"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" red="0.36078431370000003" green="0.38823529410000002" blue="0.4039215686" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <wkWebViewConfiguration key="configuration">
@@ -41,7 +41,7 @@
                                 </wkWebViewConfiguration>
                             </wkWebView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qKH-Q8-3Bp">
-                                <rect key="frame" x="45" y="94" width="267" height="230"/>
+                                <rect key="frame" x="55" y="50" width="267" height="230"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
@@ -51,6 +51,10 @@
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <viewLayoutGuide key="safeArea" id="pEb-e6-4hn"/>
                     </view>
+                    <connections>
+                        <outlet property="textView" destination="qKH-Q8-3Bp" id="2vL-V0-3mR"/>
+                        <outlet property="webViewer" destination="kWe-M2-WNg" id="fYh-fx-AnT"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="mP8-7f-HWT" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
