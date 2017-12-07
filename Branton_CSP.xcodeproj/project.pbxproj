@@ -12,6 +12,8 @@
 		B7486C541FA256FA008DC2F4 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B7486C521FA256FA008DC2F4 /* Main.storyboard */; };
 		B7486C561FA256FA008DC2F4 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B7486C551FA256FA008DC2F4 /* Assets.xcassets */; };
 		B7486C591FA256FA008DC2F4 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B7486C571FA256FA008DC2F4 /* LaunchScreen.storyboard */; };
+		B76C92F61FD9C3BE002F8B92 /* CreativityViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B76C92F51FD9C3BE002F8B92 /* CreativityViewController.swift */; };
+		B76C92F81FD9D35C002F8B92 /* ArtCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B76C92F71FD9D35C002F8B92 /* ArtCell.swift */; };
 		B77A50D31FCC989200A233E2 /* SecondViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B77A50D21FCC989200A233E2 /* SecondViewController.swift */; };
 		B79B20061FCF364F0007854F /* InternetMasterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B79B20051FCF364F0007854F /* InternetMasterViewController.swift */; };
 		B79B20081FCF39BE0007854F /* InternetDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B79B20071FCF39BE0007854F /* InternetDetailViewController.swift */; };
@@ -26,6 +28,8 @@
 		B7486C551FA256FA008DC2F4 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		B7486C581FA256FA008DC2F4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		B7486C5A1FA256FA008DC2F4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B76C92F51FD9C3BE002F8B92 /* CreativityViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreativityViewController.swift; sourceTree = "<group>"; };
+		B76C92F71FD9D35C002F8B92 /* ArtCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArtCell.swift; sourceTree = "<group>"; };
 		B77A50D21FCC989200A233E2 /* SecondViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecondViewController.swift; sourceTree = "<group>"; };
 		B79B20051FCF364F0007854F /* InternetMasterViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InternetMasterViewController.swift; sourceTree = "<group>"; };
 		B79B20071FCF39BE0007854F /* InternetDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InternetDetailViewController.swift; sourceTree = "<group>"; };
@@ -80,6 +84,8 @@
 				B77A50D21FCC989200A233E2 /* SecondViewController.swift */,
 				B79B20071FCF39BE0007854F /* InternetDetailViewController.swift */,
 				B79B20051FCF364F0007854F /* InternetMasterViewController.swift */,
+				B76C92F51FD9C3BE002F8B92 /* CreativityViewController.swift */,
+				B76C92F71FD9D35C002F8B92 /* ArtCell.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -190,7 +196,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				B77A50D31FCC989200A233E2 /* SecondViewController.swift in Sources */,
+				B76C92F81FD9D35C002F8B92 /* ArtCell.swift in Sources */,
 				B79B20061FCF364F0007854F /* InternetMasterViewController.swift in Sources */,
+				B76C92F61FD9C3BE002F8B92 /* CreativityViewController.swift in Sources */,
 				B7486C511FA256FA008DC2F4 /* ViewController.swift in Sources */,
 				B79B20081FCF39BE0007854F /* InternetDetailViewController.swift in Sources */,
 				B7486C4F1FA256FA008DC2F4 /* AppDelegate.swift in Sources */,
