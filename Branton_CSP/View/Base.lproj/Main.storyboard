@@ -156,10 +156,10 @@
             </objects>
             <point key="canvasLocation" x="2913" y="125"/>
         </scene>
-        <!--View Controller-->
+        <!--Drawing View Controller-->
         <scene sceneID="FpP-RS-bTn">
             <objects>
-                <viewController id="rwk-1l-qb7" sceneMemberID="viewController">
+                <viewController id="rwk-1l-qb7" customClass="DrawingViewController" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="ful-ZL-KeO">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>

@@ -78,8 +78,8 @@
 				B7486C4E1FA256FA008DC2F4 /* AppDelegate.swift */,
 				B7486C501FA256FA008DC2F4 /* ViewController.swift */,
 				B77A50D21FCC989200A233E2 /* SecondViewController.swift */,
-				B79B20051FCF364F0007854F /* InternetMasterViewController.swift */,
 				B79B20071FCF39BE0007854F /* InternetDetailViewController.swift */,
+				B79B20051FCF364F0007854F /* InternetMasterViewController.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";

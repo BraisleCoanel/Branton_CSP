@@ -8,9 +8,9 @@
 
 import UIKit
 
-class InternetMasterViewController: UITableViewController
+public class InternetMasterViewController: UITableViewController
 {
-    private (set) lazy var interneTopics : [String] =
+    private (set) lazy var internetTopics : [String] =
     {
         return [
             "Definitions",
@@ -22,11 +22,26 @@ class InternetMasterViewController: UITableViewController
         ]
     }()
     
+    private lazy var addresses : [String] = []
+    
     private var detailViewController : InternetDetailViewController?
     
     private func setup() -> Void
     {
+        addresses = [
+            "https://www.google.com",
+            "https://www.google.com",
+            "https://www.google.com",
+            "https://www.google.com",
+            "https://www.google.com",
+            "https://www.google.com"
+        ]
         
+        if let splitView = splitViewController
+        {
+            let currentControllers = splitView.viewControllers
+            detailViewController = currentControllers[0] as? InternetDetailViewController
+        }
     }
 
     override public func viewDidLoad()
@@ -50,17 +65,39 @@ class InternetMasterViewController: UITableViewController
     override public func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell
     {
         let call = tableView.dequeueReusableCell(withIdentifier: "reuseIdentifier", for: indexPath)
-        let currentText = interneTopics[indexPath.row]
+        let currentText = internetTopics[indexPath.row]
         cell.textLabel!.text = currentText
         
         return cell
     }
     
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
+    override public func prepare(for seue: UIStoryboardSegue, sender: Any?)
+    {
+        if segue.identifier! == "showDetail"
+        {
+            if let indexPath = self.tableView.indexPathForSelectedRow
+            {
+                let urlString = addresses[indexPath.row]
+                let pageText : String
+                
+                if indexPath.row == 0
+                {
+                    pageText = "All the definitions you wrote..."
+                }
+                else
+                {
+                    pageText = internetTopics[indexPath.row]
+                }
+                
+                let controller = segue.destination as! InternetDetailViewController
+                
+                controller.detailAddress = urlString
+                controller.detailText = pageText
+                controller.naviionItem.leftBarButtonItem = splitViewController?.displayModeButtonItem
+                controller.navigationItem.leftItemsSupplementBackButton = true
+            }
+        }
     }
-    
 
     /*
     // MARK: - Navigation
