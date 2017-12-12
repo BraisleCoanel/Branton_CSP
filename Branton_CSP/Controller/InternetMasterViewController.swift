@@ -28,13 +28,13 @@ public class InternetMasterViewController: UITableViewController
     
     private func setup() -> Void
     {
-        addresses = [
-            "https://www.google.com",
-            "https://www.google.com",
-            "https://www.google.com",
-            "https://www.google.com",
-            "https://www.google.com",
-            "https://www.google.com"
+         addresses = [
+            "http://mistupid.com/computers/inetwork.htm",
+            "https://apstudent.collegeboard.org/apcourse/ap-computer-science-principles",
+            "https://ctec.canyonsdistrict.org/",
+            "http://www.canyonsdistrict.org/",
+            "https://twitter.com/?lang=en",
+            "https://developer.apple.com/library/content/documentation/Swift/Conceptual/Swift_Programming_Language/TheBasics.html"
         ]
         
         if let splitView = splitViewController
@@ -64,7 +64,7 @@ public class InternetMasterViewController: UITableViewController
     
     override public func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell
     {
-        let call = tableView.dequeueReusableCell(withIdentifier: "reuseIdentifier", for: indexPath)
+        let cell = tableView.dequeueReusableCell(withIdentifier: "reuseIdentifier", for: indexPath)
         let currentText = internetTopics[indexPath.row]
         cell.textLabel!.text = currentText
         
