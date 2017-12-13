@@ -16,9 +16,12 @@ public class Projectile: SKSpriteNode
     {
         let texture = SKTexture(imageNamed: imageName)
         super.init(texture: texture, color: SKColor.clear, size: texture.size())
+        if(bulletSound != nil)
+        {
+            run(SKAction.playSoundFileNamed(bulletSound!, waitForCompletion: false))
+        }
         
     }
-    
     
     required public init?(coder aDecoder: NSCoder)
     {

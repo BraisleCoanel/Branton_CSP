@@ -21,8 +21,16 @@ public class Invader: SKSpriteNode
         let texture = SKTexture(imageNamed: "enemy1")
         super.init(texture: texture, color: SKColor.clear, size: texture.size())
         self.name = "invader"
-    
+        
+        self.physicsBody =
+            SKPhysicsBody(texture:self.texture!, size: self.size)
+        self.physicsBody?.isDynamic = true
+        self.physicsBody?.usesPreciseCollisisionDetection = false
+        self.physicsBody?.categoryBitMask = CollisionCategories.Invader
+        self.physicsBody?.contactTestBitMask = CollisionCategories.PlayerBullet | CollisionCategories.Player
+        self.physicsBody?.collionBitMask = CollisionCategories.EdgeBody
     }
+    
     // Required init must be provided by subclass
     required public init?(coder aDecoder: NSCoder)
     {
