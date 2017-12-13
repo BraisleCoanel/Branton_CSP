@@ -11,7 +11,7 @@ import SpriteKit
 
 public class StartScene : SKScene
 {
-    override public func didMove(to view: SKView)
+    override public func didMove(to view: SKView) -> Void
     {
         backgroundColor = UIColor.darkGray
         let startButton = SKSpriteNode(imageNamed: "Death Star")
@@ -27,7 +27,17 @@ public class StartScene : SKScene
     
     override public func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?)
     {
+        let currentTouch = touches.first
+        let touchLocation = currentTouch?.location(in: self)
+        let touchedNode = self.atPoint(touchLocation)
         
+        if (touchedNode.name == "Start")
+        {
+            let gameOverScene = GameScene(size: size)
+            gameOverScene.scaleMode = scaleMode
+            let transitionType = SKTransition.flipHorizontal(withDuration: 1.0)
+            view?.presentScene(gameOverScene, transition: transitionType)
+        }
         
     }
 }

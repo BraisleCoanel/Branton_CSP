@@ -1,14 +1,14 @@
 //
-//  SecondViewController.swift
+//  AlgorithmsViewController.swift
 //  Branton_CSP
 //
-//  Created by Martinson, Branton on 11/27/17.
+//  Created by Martinson, Branton on 12/13/17.
 //  Copyright © 2017 Martinson, Branton. All rights reserved.
 //
 
 import UIKit
 
-class SecondViewController: UIViewController {
+class AlgorithmsViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
