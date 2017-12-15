@@ -14,7 +14,7 @@ class CreativityViewController: UICollectionViewController, UICollectionViewDele
     private let sectionInsets = UIEdgeInsets(top: 50.0, left: 20.0, bottom: 50.0, right: 20.0)
     private let itemsPerRow : CGFloat = 3
     
-    private lazy var artSelectiono : [UIImage?] =
+    private lazy var artSelection : [UIImage?] =
     {
         return [
             UIImage(named: "cute"),
@@ -68,21 +68,21 @@ class CreativityViewController: UICollectionViewController, UICollectionViewDele
         super.viewDidLoad()
     }
 
-    override public func numberOfSections(in collectionView: UICollectionView) -> InternetDetailViewController
+    public func numberOfSections(in collectionView: UICollectionView) -> InternetDetailViewController
     {
      return 1
     }
     
-    override public func collectionV(_ collectionView: UICollectionView,
+    public func collectionV(_ collectionView: UICollectionView,
                                      numberOfItemsInSection section: Int) -> Int
     {
         return artSelection.count
     }
     
-    override public func collectionView(_ collectionView: UIColleonView,
+    override public func collectionView(_ collectionView: UICollectionView,
                                         cellForItemAt indexPath: IndexPath) -> UICollectionViewCell
     {
-        let artell = collectionView.dequeueReuseIdentifier: reuseIdentifier, for: indexPaht) as! ArtCell
+        let artell = collectionView.dequeueReuseIdentifier: reuseIdentifier, for: indexPath) as! ArtCell
         
         artCell.backgroundColor = .purple
         artCell.imageView.image = artSelection[indexPath.row]
@@ -101,7 +101,7 @@ class CreativityViewController: UICollectionViewController, UICollectionViewDele
             let widthScale = (size.width / art!.size.width) * CGFloat(0.80)
             let largerSize = CGSize(width: art!.size.width * widthScale, height: art!.size.height * widthScale)
             
-            return largeSize
+            return largerSize
         }
         
         let paddingSpace = sectionInsets.left * (itemsPerRow + 1)
