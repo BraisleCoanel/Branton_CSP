@@ -35,10 +35,10 @@ class CreativityViewController: UICollectionViewController, UICollectionViewDele
     {
         didSet
         {
-            var indexPaths = [IndexPath]()_
+            var indexPaths = [IndexPath]()
             if let largePhotoIndexPath = largePhotoIndexPath
             {
-                indexPaths.appeed(largePhotoIndexPath)
+                indexPaths.append(largePhotoIndexPath)
             }
             if let oldValue = oldValue
             {
@@ -96,7 +96,7 @@ class CreativityViewController: UICollectionViewController, UICollectionViewDele
                                sizeForItemAt indexPath: IndexPath) -> CGSize {
         if indexPath == largePhotoIndexPath
         {
-            let art = artSelectin[indexPath.row]
+            let art = artSelection[indexPath.row]
             let size = collectionView.bounds.size
             let widthScale = (size.width / art!.size.width) * CGFloat(0.80)
             let largerSize = CGSize(width: art!.size.width * widthScale, height: art!.size.height * widthScale)
