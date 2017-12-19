@@ -23,6 +23,7 @@
 		B7D82C311FE1B40500EAB27F /* GlobalImpactViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7D82C301FE1B40500EAB27F /* GlobalImpactViewController.swift */; };
 		B7D82C331FE1B41D00EAB27F /* DataViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7D82C321FE1B41D00EAB27F /* DataViewController.swift */; };
 		B7D82C351FE1B56400EAB27F /* Utilities.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7D82C341FE1B55700EAB27F /* Utilities.swift */; };
+		B7E047CB1FE9A4D90090A695 /* DeathScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7E047CA1FE9A4D90090A695 /* DeathScene.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -58,6 +59,7 @@
 		B7D82C301FE1B40500EAB27F /* GlobalImpactViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GlobalImpactViewController.swift; sourceTree = "<group>"; };
 		B7D82C321FE1B41D00EAB27F /* DataViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataViewController.swift; sourceTree = "<group>"; };
 		B7D82C341FE1B55700EAB27F /* Utilities.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Utilities.swift; sourceTree = "<group>"; };
+		B7E047CA1FE9A4D90090A695 /* DeathScene.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeathScene.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -178,6 +180,7 @@
 				B7D82C271FE1B03C00EAB27F /* GameScene.swift */,
 				B7D82C281FE1B04000EAB27F /* LevelCompleteScene.swift */,
 				B7D82C291FE1B04300EAB27F /* StartScene.swift */,
+				B7E047CA1FE9A4D90090A695 /* DeathScene.swift */,
 			);
 			path = GameController;
 			sourceTree = "<group>";
@@ -261,6 +264,7 @@
 				B7D82C2F1FE1B3EB00EAB27F /* AlgorithmsViewController.swift in Sources */,
 				B7D82C2B1FE1B13E00EAB27F /* ProgrammingViewController.swift in Sources */,
 				B7D82C351FE1B56400EAB27F /* Utilities.swift in Sources */,
+				B7E047CB1FE9A4D90090A695 /* DeathScene.swift in Sources */,
 				B7D82C311FE1B40500EAB27F /* GlobalImpactViewController.swift in Sources */,
 				B7486C511FA256FA008DC2F4 /* ViewController.swift in Sources */,
 				B79B20081FCF39BE0007854F /* InternetDetailViewController.swift in Sources */,

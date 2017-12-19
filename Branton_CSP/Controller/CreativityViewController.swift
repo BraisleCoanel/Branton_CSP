@@ -68,7 +68,7 @@ class CreativityViewController: UICollectionViewController, UICollectionViewDele
         super.viewDidLoad()
     }
 
-    public func numberOfSections(in collectionView: UICollectionView) -> InternetDetailViewController
+    public func numberOfSections(int collectionView: UICollectionView) -> InternetDetailViewController
     {
      return 1
     }

@@ -14,6 +14,12 @@ class PlayerLaser: Projectile
     override init(imageName: String, bulletSound:String?)
     {
         super.init(imageName: imageName, bulletSound: bulletSound)
+        self.physicsBody = SKPhysicsBody(texture: self.texture!, size: self.size)
+        self.physicsBody?.isDynamic = true
+        self.physicsBody?.usePrecisionCollisionDetection = true
+        self.physicsBody?.categoryBitMask = CollisionCategories.PlayerLaser
+        self.physicsBody?.contactTestBitMask = CollisionCategories.Invader
+        self.physicsBody?.collisionBitMask = 0x0
         
     }
     
