@@ -24,11 +24,11 @@ public class DeathScene : SKScene
         addChild(gameOver)
     }
     
-    override public func touchegan(_ touches: Set<UITouch>, with event: UIEvent?) -> Void
+    override public func touchBegan(_ touches: Set<UITouch>, with event: UIEvent?) -> Void
     {
         let touch = touches.first
         let touchLocation = touch?.location(in: self)
-        let touchNode = self.atPoint(touchLocation!)
+        let touchedNode = self.atPoint(touchLocation!)
         if(touchedNode.name == "game over")
         {
             let newGameScene = GameScene(size: size)

@@ -163,7 +163,7 @@ public class GameScene: SKScene, SKPhysicsContactDelegate
 
     override public func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) -> Void
     {
-       
+        player.fireBullet(sce: self)
     }
     
     override public func update(_ currentTime: CFTimeInterval) -> Void
@@ -192,7 +192,7 @@ public class GameScene: SKScene, SKPhysicsContactDelegate
     
     //MARK:- SKPhysicsContactDelegate method
     
-    pulic func didBegin(_ contact: SKPhysicsContact) -> Void
+    public func didBegin(_ contact: SKPhysicsContact) -> Void
     {
         
         var firstBody: SKPhysicsBody
