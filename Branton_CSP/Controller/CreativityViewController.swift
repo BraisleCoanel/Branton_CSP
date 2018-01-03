@@ -68,7 +68,7 @@ class CreativityViewController: UICollectionViewController, UICollectionViewDele
         super.viewDidLoad()
     }
 
-    public func numberOfSections(int collectionView: UICollectionView) -> InternetDetailViewController
+    public func numberOfSections(int collectionView: UICollectionView) -> Int
     {
      return 1
     }
@@ -82,7 +82,7 @@ class CreativityViewController: UICollectionViewController, UICollectionViewDele
     override public func collectionView(_ collectionView: UICollectionView,
                                         cellForItemAt indexPath: IndexPath) -> UICollectionViewCell
     {
-        let artCell = collectionView.dequeueReuseIdentifier; reuseIdentifier;, for: indexPath) as! ArtCell
+        let artCell = collectionView.dequeueReuseIdentifier( reuseIdentifier, for: indexPath) as! ArtCell
         
         artCell.backgroundColor = .purple
         artCell.imageView.image = artSelection[indexPath.row]

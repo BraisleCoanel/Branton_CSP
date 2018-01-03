@@ -24,7 +24,6 @@ public class StartScene : SKScene
         addChild(startButton)
     }
     
-    
     override public func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?)
     {
         let currentTouch = touches.first

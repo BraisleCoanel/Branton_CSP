@@ -130,10 +130,10 @@ public class GameScene: SKScene, SKPhysicsContactDelegate
     {
         if(gameLevel <= maxLevels)
         {
-            let levelCompleteScene = levelCompleteScene(size: size)
+            let levelCompleteScene = LevelCompleteScene(size: size)
             levelCompleteScene.scaleMode = scaleMode
             let transitionType = SKTransition.flipHorizontal(withDuration: 0.5)
-            view? presentScene(levelCompleteScene,transition: transitionType)
+            view?.presentScene(levelCompleteScene,transition: transitionType)
         }
         else
         {
@@ -231,7 +231,7 @@ public class GameScene: SKScene, SKPhysicsContactDelegate
                 {
                     node, stop in
                     let invader = node as! Invader
-                    if invader.invaderRow  newInvaderRow && invader.invaderCol == newInvaderCol
+                    if invader.invaderRow == newInvaderRow && invader.invaderCol == newInvaderCol
                     {
                         self.invadersThatCanFire.append(invader)
                         stop.pointee = true
