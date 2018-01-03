@@ -11,6 +11,6 @@ import UIKit
 class ArtCell: UIViewController
 {
 
-
+    
 
 }
