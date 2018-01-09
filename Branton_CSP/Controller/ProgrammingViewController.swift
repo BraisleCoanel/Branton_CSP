@@ -15,11 +15,11 @@ public class ProgrammingViewController: UIViewController
     override public func viewDidLoad() -> Void
     {
         super.viewDidLoad()
-        let gameScene = StarScene(ize: view.bounds.size)
+        let gameScene = DeathScene(size: view.bounds.size)
         let gameView = view as! SKView
         
         gameView.showsFPS = true
-        gameView.showNodeCount = true
+        gameView.showsNodeCount = true
         gameView.ignoresSiblingOrder = true
         
         gameScene.scaleMode = .resizeFill

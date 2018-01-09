@@ -18,7 +18,6 @@
 		B79B20081FCF39BE0007854F /* InternetDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B79B20071FCF39BE0007854F /* InternetDetailViewController.swift */; };
 		B79B200B1FCF3B9E0007854F /* WebKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B79B200A1FCF3B9E0007854F /* WebKit.framework */; };
 		B7D82C2B1FE1B13E00EAB27F /* ProgrammingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7D82C2A1FE1B13E00EAB27F /* ProgrammingViewController.swift */; };
-		B7D82C2D1FE1B39200EAB27F /* AbstractionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7D82C2C1FE1B39200EAB27F /* AbstractionViewController.swift */; };
 		B7D82C2F1FE1B3EB00EAB27F /* AlgorithmsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7D82C2E1FE1B3EB00EAB27F /* AlgorithmsViewController.swift */; };
 		B7D82C311FE1B40500EAB27F /* GlobalImpactViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7D82C301FE1B40500EAB27F /* GlobalImpactViewController.swift */; };
 		B7D82C331FE1B41D00EAB27F /* DataViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7D82C321FE1B41D00EAB27F /* DataViewController.swift */; };
@@ -54,7 +53,6 @@
 		B7D82C281FE1B04000EAB27F /* LevelCompleteScene.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LevelCompleteScene.swift; sourceTree = "<group>"; };
 		B7D82C291FE1B04300EAB27F /* StartScene.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StartScene.swift; sourceTree = "<group>"; };
 		B7D82C2A1FE1B13E00EAB27F /* ProgrammingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProgrammingViewController.swift; sourceTree = "<group>"; };
-		B7D82C2C1FE1B39200EAB27F /* AbstractionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AbstractionViewController.swift; sourceTree = "<group>"; };
 		B7D82C2E1FE1B3EB00EAB27F /* AlgorithmsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlgorithmsViewController.swift; sourceTree = "<group>"; };
 		B7D82C301FE1B40500EAB27F /* GlobalImpactViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GlobalImpactViewController.swift; sourceTree = "<group>"; };
 		B7D82C321FE1B41D00EAB27F /* DataViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataViewController.swift; sourceTree = "<group>"; };
@@ -110,7 +108,6 @@
 				B7486C501FA256FA008DC2F4 /* ViewController.swift */,
 				B76C92F51FD9C3BE002F8B92 /* CreativityViewController.swift */,
 				B76C92F71FD9D35C002F8B92 /* ArtCell.swift */,
-				B7D82C2C1FE1B39200EAB27F /* AbstractionViewController.swift */,
 				B7D82C2E1FE1B3EB00EAB27F /* AlgorithmsViewController.swift */,
 				B7D82C301FE1B40500EAB27F /* GlobalImpactViewController.swift */,
 				B79B20071FCF39BE0007854F /* InternetDetailViewController.swift */,
@@ -260,7 +257,6 @@
 				B76C92F81FD9D35C002F8B92 /* ArtCell.swift in Sources */,
 				B79B20061FCF364F0007854F /* InternetMasterViewController.swift in Sources */,
 				B76C92F61FD9C3BE002F8B92 /* CreativityViewController.swift in Sources */,
-				B7D82C2D1FE1B39200EAB27F /* AbstractionViewController.swift in Sources */,
 				B7D82C2F1FE1B3EB00EAB27F /* AlgorithmsViewController.swift in Sources */,
 				B7D82C2B1FE1B13E00EAB27F /* ProgrammingViewController.swift in Sources */,
 				B7D82C351FE1B56400EAB27F /* Utilities.swift in Sources */,

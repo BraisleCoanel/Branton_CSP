@@ -45,7 +45,7 @@ class CreativityViewController: UICollectionViewController, UICollectionViewDele
                 indexPaths.append(oldValue)
             }
             
-            collectionView?.preformBatchUpdates(
+            collectionView?.performBatchUpdates(
                 {
                     self.collectionView?.reloadItems(at: indexPaths)
                 })
@@ -70,10 +70,10 @@ class CreativityViewController: UICollectionViewController, UICollectionViewDele
 
     public func numberOfSections(int collectionView: UICollectionView) -> Int
     {
-     return 1
+        return 1
     }
     
-    public func collectionV(_ collectionView: UICollectionView,
+    public override func collectionView(_ collectionView: UICollectionView,
                                      numberOfItemsInSection section: Int) -> Int
     {
         return artSelection.count
@@ -82,7 +82,7 @@ class CreativityViewController: UICollectionViewController, UICollectionViewDele
     override public func collectionView(_ collectionView: UICollectionView,
                                         cellForItemAt indexPath: IndexPath) -> UICollectionViewCell
     {
-        let artCell = collectionView.dequeueReuseIdentifier( reuseIdentifier, for: indexPath) as! ArtCell
+        let artCell = collectionView.dequeueReuseIdentifier(reuseIdentifier, for: indexPath) as! ArtCell
         
         artCell.backgroundColor = .purple
         artCell.imageView.image = artSelection[indexPath.row]
@@ -126,7 +126,7 @@ class CreativityViewController: UICollectionViewController, UICollectionViewDele
     }
     
     override public func collectionView(_ collectionView: UICollectionView,
-                                        shouldSelectItemAt indexPath, _: IndexPath) -> Bool
+                                        shouldSelectItemAt indexPath : IndexPath) -> Bool
     {
         if largePhotoIndexPath == indexPath
         {
@@ -136,7 +136,7 @@ class CreativityViewController: UICollectionViewController, UICollectionViewDele
         {
             largePhotoIndexPath = indexPath
         }
-        
+
         return false
     }
 }

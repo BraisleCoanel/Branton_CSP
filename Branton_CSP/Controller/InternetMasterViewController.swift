@@ -71,7 +71,7 @@ public class InternetMasterViewController: UITableViewController
         return cell
     }
     
-    override public func prepare(for seue: UIStoryboardSegue, sender: Any?)
+    override public func prepare(for segue: UIStoryboardSegue, sender: Any?)
     {
         if segue.identifier! == "showDetail"
         {
@@ -93,7 +93,7 @@ public class InternetMasterViewController: UITableViewController
                 
                 controller.detailAddress = urlString
                 controller.detailText = pageText
-                controller.naviionItem.leftBarButtonItem = splitViewController?.displayModeButtonItem
+                controller.navigationItem.leftBarButtonItem = splitViewController?.displayModeButtonItem
                 controller.navigationItem.leftItemsSupplementBackButton = true
             }
         }
