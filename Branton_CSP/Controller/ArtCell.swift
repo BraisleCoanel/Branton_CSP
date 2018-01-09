@@ -8,9 +8,10 @@
 
 import UIKit
 
-class ArtCell: UIViewController
+public class ArtCell : UICollectionViewCell
 {
-
     
-
+    @IBOutlet weak var imageView: UIImageView!
+    
+    @IBOutlet weak var imageName: UILabel!
 }

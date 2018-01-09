@@ -39,11 +39,12 @@ class AppDelegate: UIResponder, UIApplicationDelegate, UISplitViewControllerDele
 
     func applicationWillTerminate(_ application: UIApplication) {    }
 
-    func splitViewController(_ splitViewController: UISplitViewController, collapseSecondary secondaryViewController : UIViewController,
+    func splitViewController(_ splitViewController: UISplitViewController,
+                             collapseSecondary secondaryViewController : UIViewController,
                              onto primaryViewController : UIViewController) -> Bool
     {
-        guard let secondarytAsNavController = secondaryViewController as? UINavigationController else { return false }
-        guard let topAsDetailController = secondaryViewController.topViewController as? InternetDetailViewController else { return false }
+        guard let secondaryAsNavController = secondaryViewController as? UINavigationController else { return false }
+        guard let topAsDetailController = secondaryAsNavController.topViewController as? InternetDetailViewController else { return false }
         if topAsDetailController.detailAddress == nil
         {
             return true
